@@ -1,4 +1,4 @@
-# BTL2 Dự án chẩn đoán lỗi bạc đạn
+# Dự án chẩn đoán lỗi bạc đạn
 
 Kho lưu trữ này chứa dự án chẩn đoán lỗi bạc đạn sử dụng PyTorch, với dữ liệu tín hiệu rung từ các file `.mat`. Thực nghiệm chính được thực hiện trong notebook `model/SA.ipynb`.
 ## Nguồn data https://zenodo.org/records/15845309
