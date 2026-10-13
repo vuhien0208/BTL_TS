@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đăng ký — CropMate AI</title>
+<meta name="description" content="CropMate AI: nhật ký mùa vụ và trợ lý canh tác (bản demo Frontend).">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-root="" data-page="register">
+<div class="auth"><aside class="auth-side"><a class="brand" href="index.html"><span class="brand-mark"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21v-9M12 12C12 8 9 6 5 6c0 4 3 6 7 6zM12 14c0-3 2-5 6-5 0 3-2 5-6 5z"/></svg></span><span>CropMate AI<small>Nhật ký mùa vụ & trợ lý canh tác</small></span></a><div><h2>Bắt đầu nhật ký mùa vụ đầu tiên của bạn.</h2><p>Đăng ký tài khoản Nông dân để quản lý thửa ruộng, ghi nhật ký và gửi yêu cầu hỗ trợ.</p></div><p class="small" style="color:#8fb59b">Học phần CSE122 — Bản demo Frontend, dữ liệu lưu trong trình duyệt.</p></aside>
+<main class="auth-main" id="main"><div class="auth-card" id="register-box">
+<h1>Đăng ký Nông dân</h1><p class="muted" style="margin-bottom:18px">Tài khoản Chuyên gia, Điều phối và Quản trị do quản trị viên tạo.</p>
+<form id="register-form" novalidate>
+<div class="field"><label for="f-name">Họ và tên <span class="req" aria-hidden="true">*</span></label><input type="text" id="f-name" name="name" aria-describedby="err-name" autocomplete="name"><p class="field-error" id="err-name" hidden></p></div>
+<div class="field"><label for="f-email">Email <span class="req" aria-hidden="true">*</span></label><input type="email" id="f-email" name="email" aria-describedby="err-email" autocomplete="email"><p class="field-error" id="err-email" hidden></p></div>
+<div class="field"><label for="f-phone">Số điện thoại</label><input type="tel" id="f-phone" name="phone" aria-describedby="err-phone" autocomplete="tel"><p class="field-error" id="err-phone" hidden></p></div>
+<div class="field"><label for="f-farmName">Tên nông hộ (không bắt buộc)</label><input type="text" id="f-farmName" name="farmName" aria-describedby="err-farmName" ><p class="field-error" id="err-farmName" hidden></p></div>
+<div class="field"><label for="f-password">Mật khẩu <span class="req" aria-hidden="true">*</span></label><div class="pw-wrap"><input type="password" id="f-password" name="password" aria-describedby="err-password" autocomplete="new-password"><button type="button" data-toggle-pw aria-label="Hiện hoặc ẩn mật khẩu">Hiện</button></div><p class="field-error" id="err-password" hidden></p></div>
+<div class="field"><label for="f-confirm">Xác nhận mật khẩu <span class="req" aria-hidden="true">*</span></label><div class="pw-wrap"><input type="password" id="f-confirm" name="confirm" aria-describedby="err-confirm" autocomplete="new-password"><button type="button" data-toggle-pw aria-label="Hiện hoặc ẩn mật khẩu">Hiện</button></div><p class="field-error" id="err-confirm" hidden></p></div>
+<div class="field"><label class="check"><input type="checkbox" id="f-agree" name="agree" aria-describedby="err-agree"> Tôi hiểu đây là bản demo mô phỏng, dữ liệu chỉ lưu trên trình duyệt này.</label><p class="field-error" id="err-agree" hidden></p></div>
+<button class="btn btn-block" type="submit">Tạo tài khoản</button></form>
+<p class="small" style="margin-top:16px">Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+</div></main></div>
+<script src="js/data/seed.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/modules/auth-pages.js"></script>
+</body>
+</html>

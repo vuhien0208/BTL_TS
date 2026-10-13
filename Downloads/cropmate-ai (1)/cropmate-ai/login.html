@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đăng nhập — CropMate AI</title>
+<meta name="description" content="CropMate AI: nhật ký mùa vụ và trợ lý canh tác (bản demo Frontend).">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-root="" data-page="login">
+<div class="auth"><aside class="auth-side"><a class="brand" href="index.html"><span class="brand-mark"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21v-9M12 12C12 8 9 6 5 6c0 4 3 6 7 6zM12 14c0-3 2-5 6-5 0 3-2 5-6 5z"/></svg></span><span>CropMate AI<small>Nhật ký mùa vụ & trợ lý canh tác</small></span></a><div><h2>Ghi lại mùa vụ, hỏi chuyên gia, theo dõi cả HTX.</h2><p>Một nơi để nông dân, chuyên gia, điều phối viên và quản trị viên cùng làm việc trên dữ liệu mùa vụ chung.</p></div><p class="small" style="color:#8fb59b">Học phần CSE122 — Bản demo Frontend, dữ liệu lưu trong trình duyệt.</p></aside>
+<main class="auth-main" id="main"><div class="auth-card">
+<h1>Đăng nhập</h1><p class="muted" style="margin-bottom:18px">Dùng email và mật khẩu của bạn, hoặc chọn một tài khoản demo bên dưới.</p>
+<div id="login-alert" aria-live="polite"></div>
+<form id="login-form" novalidate style="margin-top:12px">
+<div class="field"><label for="f-email">Email</label><input type="email" id="f-email" name="email" autocomplete="username" aria-describedby="err-email" placeholder="ten@cropmate.vn"><p class="field-error" id="err-email" hidden></p></div>
+<div class="field"><label for="f-password">Mật khẩu</label><div class="pw-wrap"><input type="password" id="f-password" name="password" autocomplete="current-password" aria-describedby="err-password"><button type="button" data-toggle-pw aria-label="Hiện hoặc ẩn mật khẩu">Hiện</button></div><p class="field-error" id="err-password" hidden></p></div>
+<div class="row spread" style="margin-bottom:16px"><label class="check"><input type="checkbox" name="remember"> Ghi nhớ đăng nhập</label><a href="forgot-password.html" class="small">Quên mật khẩu?</a></div>
+<button class="btn btn-block" type="submit">Đăng nhập</button></form>
+<p class="small" style="margin-top:16px">Chưa có tài khoản Nông dân? <a href="register.html">Đăng ký</a></p>
+<h2 style="font-size:.95rem;margin:26px 0 0">Tài khoản demo</h2><div class="demo-accts">
+<button type="button" data-demo="farmer@cropmate.vn" data-pw="Farmer@123"><b>Nông dân</b>farmer@cropmate.vn</button>
+<button type="button" data-demo="expert@cropmate.vn" data-pw="Expert@123"><b>Chuyên gia</b>expert@cropmate.vn</button>
+<button type="button" data-demo="coordinator@cropmate.vn" data-pw="Coord@123"><b>Điều phối HTX</b>coordinator@cropmate.vn</button>
+<button type="button" data-demo="admin@cropmate.vn" data-pw="Admin@123"><b>Quản trị viên</b>admin@cropmate.vn</button>
+<button type="button" data-demo="tam.le@cropmate.vn" data-pw="Farmer@123"><b>Tài khoản bị vô hiệu hóa</b>tam.le@cropmate.vn</button>
+</div>
+<p class="small muted" style="margin-top:14px">Đây là mô phỏng Frontend, không có bảo mật như hệ thống Backend thực tế. <a href="index.html">Về trang giới thiệu</a></p>
+</div></main></div>
+<script src="js/data/seed.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/modules/auth-pages.js"></script>
+</body>
+</html>
